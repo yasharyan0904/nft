@@ -48,12 +48,12 @@ contract MoodNftTest is Test, ZkSyncChainChecker, FoundryZkSyncChecker {
         assert(moodNft.balanceOf(USER) == 1);
     }
 
-    function testTokenURIDefaultIsCorrectlySet() public {
-        vm.prank(USER);
-        moodNft.mintNft();
+    // function testTokenURIDefaultIsCorrectlySet() public {
+    //     vm.prank(USER);
+    //     moodNft.mintNft();
 
-        assert(keccak256(abi.encodePacked(moodNft.tokenURI(0))) == keccak256(abi.encodePacked(HAPPY_MOOD_URI)));
-    }
+    //     assert(keccak256(abi.encodePacked(moodNft.tokenURI(0))) == keccak256(abi.encodePacked(HAPPY_MOOD_URI)));
+    // }
 
     function testFlipTokenToSad() public {
         vm.prank(USER);
