@@ -6,7 +6,7 @@ import {BasicNft} from "../src/BasicNft.sol";
 import {console} from "forge-std/console.sol";
 
 contract DeployBasicNft is Script {
-    uint256 public DEFAULT_ANVIL_PRIVATE_KEY = ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80;
+    uint256 public DEFAULT_ANVIL_PRIVATE_KEY = ;
     //73IUH3PF12AGK3SV2HYQHBU2116SH43I7S
     uint256 public deployerKey;
 
